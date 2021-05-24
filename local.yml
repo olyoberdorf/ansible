@@ -16,3 +16,4 @@
     - include: tasks/thinkorswim.yml
     - include: tasks/protonvpn.yml
     - include: tasks/veracrypt.yml
+    - include: tasks/authy.yml

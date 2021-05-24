@@ -11,7 +11,7 @@
   when: '"protonvpn" not in ansible_facts.packages'
 - name: Install ProtonVPN Repo Package
   apt:
-    deb: /home/{{ ansible_env.USER }}/protonvpn-stable-release_1.0.0-1_all.deb
+    deb: /home/oliver/bin/protonvpn-stable-release_1.0.0-1_all.deb
   when: '"protonvpn" not in ansible_facts.packages'
 - name: Install ProtonVPN
   apt:

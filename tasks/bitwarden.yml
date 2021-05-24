@@ -9,4 +9,6 @@
   get_url:
       url: https://vault.bitwarden.com/download/?app=desktop&platform=linux
       dest: /home/oliver/bin/BitWarden.AppImage
+      owner: oliver
+      group: oliver
       mode: '0700'

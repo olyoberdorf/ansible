@@ -1,0 +1,14 @@
+- name: Ensure bin directory
+  file:
+    path: /home/oliver/bin
+    state: directory
+    owner: oliver
+    group: oliver
+    mode: '0700'
+- name: Download thinkorswim
+  get_url:
+      url: https://mediaserver.thinkorswim.com/installer/InstFiles/thinkorswim_installer.sh
+      dest: /home/oliver/bin/thinkorswim_installer.sh
+      owner: oliver
+      group: oliver
+      mode: '0700'

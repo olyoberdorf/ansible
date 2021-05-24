@@ -13,3 +13,5 @@
     - include: tasks/egpu.yml
     - include: tasks/signal.yml
     - include: tasks/bitwarden.yml
+    - include: tasks/thinkorswim.yml
+    - include: tasks/protonvpn.yml

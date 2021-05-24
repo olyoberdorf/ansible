@@ -12,3 +12,4 @@
     - include: tasks/packages.yml
     - include: tasks/egpu.yml
     - include: tasks/signal.yml
+    - include: tasks/bitwarden.yml

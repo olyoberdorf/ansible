@@ -1,0 +1,11 @@
+name: Install Bitwarden
+  - file:
+      path: /home/oliver/bin
+      state: directory
+      owner: oliver
+      group: oliver
+      mode '0700'
+  - get_url:
+      url: https://vault.bitwarden.com/download/?app=desktop&platform=linux
+      dest: /home/oliver/bin/BitWarden.AppImage
+      mode: '0700'

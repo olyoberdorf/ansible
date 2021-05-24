@@ -3,7 +3,10 @@
   become: true
 
   tasks:
-  - name: Instlal htp
+  - name: Install packages
     apt:
-      name: htop
-
+      name: 
+        - htop
+        - mariadb
+        - python3
+        - python-pip3

@@ -1,14 +1,14 @@
 - name: Install Signal key
-    apt_key:
-      url: "https://updates.signal.org/desktop/apt/keys.asc"
-      state: present
+  apt_key:
+    url: "https://updates.signal.org/desktop/apt/keys.asc"
+    state: present
 - name: Add Signal repo
-    apt_repository:
-      repo: deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main
-      state: present
-      filename: signal-xenial.list
+  apt_repository:
+    repo: deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main
+    state: present
+    filename: signal-xenial.list
 - name: Install Signal
-    apt:
-      update_cache: yes
-      name: signal-desktop
-      state: latest
+  apt:
+    update_cache: yes
+    name: signal-desktop
+    state: latest

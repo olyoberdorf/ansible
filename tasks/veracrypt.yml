@@ -1,0 +1,15 @@
+- name: Check VeraCrypt Install Status
+  package_facts:
+    manager: auto
+- name: Download VeraCrypt Repo Package
+  get_url:
+      url: https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-Ubuntu-20.10-amd64.deb
+      dest: /home/oliver/Downloads/
+      owner: oliver
+      group: oliver
+      mode: '0700'
+  when: '"veracrypt" not in ansible_facts.packages'
+- name: Install VeraCrypt Package
+  apt:
+    deb: /home/oliver/Downloads/veracrypt-1.24-Update7-Ubuntu-20.10-amd64.deb
+  when: '"veracrypt" not in ansible_facts.packages'

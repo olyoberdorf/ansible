@@ -1,0 +1,8 @@
+name: Install epgu-switcher
+  - apt_repository:
+      repo: ppa:hertg/egpu-switcher
+      state: present
+  - apt:
+      update_cache: yes
+      name: egpu-switcher
+      state: latest

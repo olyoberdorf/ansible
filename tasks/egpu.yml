@@ -1,10 +1,9 @@
-tasks:
-  - name: Add epgu-switcher repo
-    apt_repository:
-      repo: ppa:hertg/egpu-switcher
-      state: present
-  - name: Install egpu-switcher
-    apt:
-      update_cache: yes
-      name: egpu-switcher
-      state: latest
+- name: Add epgu-switcher repo
+  apt_repository:
+    repo: ppa:hertg/egpu-switcher
+    state: present
+- name: Install egpu-switcher
+  apt:
+    update_cache: yes
+    name: egpu-switcher
+    state: latest

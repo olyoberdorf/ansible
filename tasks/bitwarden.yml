@@ -12,5 +12,6 @@
 #       owner: oliver
 #       group: oliver
 #       mode: '0700'
-- name: Install BitWarden flatpak
-  shell: flatpak install flathub com.bitwarden.desktop
+# AND THIS fails too, Pop! OS flatpak support is ASS
+##- name: Install BitWarden flatpak
+##  shell: flatpak install flathub com.bitwarden.desktop
